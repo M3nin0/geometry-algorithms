@@ -125,12 +125,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Point.h" />
+    <ClInclude Include="PointAlgorithms.h" />
     <ClInclude Include="Segment.h" />
     <ClInclude Include="SegmentAlgorithms.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="PointAlgorithms.cpp" />
     <ClCompile Include="Segment.cpp" />
     <ClCompile Include="SegmentAlgorithms.cpp" />
   </ItemGroup>
