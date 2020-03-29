@@ -2,6 +2,7 @@
 
 #include "Point.h"
 #include "Segment.h"
+#include "SegmentAlgorithms.h"
 
 int main()
 {
@@ -17,9 +18,9 @@ int main()
 	Segment s5(p1, p2);
 	Segment s6(p1, p2);
 
-	std::cout << "Intersecção (Verdadeiro) " << s1.Intersects(s2) << std::endl;
-	std::cout << "Intersecção (Falso) " << s3.Intersects(s4) << std::endl;
-	std::cout << "Intersecção (Overlap) " << s5.Intersects(s6) << std::endl;
+	std::cout << "Intersecção (Verdadeiro) " << SegmentIntersects(s1, s2) << std::endl;
+	std::cout << "Intersecção (Falso) " << SegmentIntersects(s3, s4) << std::endl;
+	std::cout << "Intersecção (Overlap) " << SegmentIntersects(s5, s6) << std::endl;
 
 	return 0;
 }

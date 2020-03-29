@@ -1,5 +1,4 @@
-#ifndef _POINT_HEADER
-#define _POINT_HEADER
+#pragma once
 
 class Point 
 {
@@ -11,5 +10,3 @@ public:
 	double X() const;
 	double Y() const;
 };
-
-#endif

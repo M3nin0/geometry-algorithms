@@ -1,5 +1,4 @@
-#ifndef _SEGMENT_HEADER
-#define _SEGMENT_HEADER
+#pragma once
 
 #include "Point.h"
 
@@ -12,8 +11,4 @@ public:
 
 	Point PStart() const;
 	Point PFinal() const;
-
-	bool Intersects(const Segment& other) const;
 };
-
-#endif // !_SEGMENT_HEADER
