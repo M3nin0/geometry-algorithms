@@ -1,3 +1,1 @@
-# segment-intersects
-
-C++ segment intersection algorithm
+# geometry-algorithms
