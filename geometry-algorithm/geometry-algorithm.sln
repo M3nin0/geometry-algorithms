@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "geometry-algorithm", "geometry-algorithm\geometry-algorithm.vcxproj", "{5C0457B9-D270-4A2D-8AD2-B18811C0B070}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D31977E9-BFD7-471C-A10D-DA216B8DE55B} = {D31977E9-BFD7-471C-A10D-DA216B8DE55B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "geometry-algorithms-test", "geometry-algorithms-test\geometry-algorithms-test.vcxproj", "{D31977E9-BFD7-471C-A10D-DA216B8DE55B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,14 @@ Global
 		{5C0457B9-D270-4A2D-8AD2-B18811C0B070}.Release|x64.Build.0 = Release|x64
 		{5C0457B9-D270-4A2D-8AD2-B18811C0B070}.Release|x86.ActiveCfg = Release|Win32
 		{5C0457B9-D270-4A2D-8AD2-B18811C0B070}.Release|x86.Build.0 = Release|Win32
+		{D31977E9-BFD7-471C-A10D-DA216B8DE55B}.Debug|x64.ActiveCfg = Debug|x64
+		{D31977E9-BFD7-471C-A10D-DA216B8DE55B}.Debug|x64.Build.0 = Debug|x64
+		{D31977E9-BFD7-471C-A10D-DA216B8DE55B}.Debug|x86.ActiveCfg = Debug|Win32
+		{D31977E9-BFD7-471C-A10D-DA216B8DE55B}.Debug|x86.Build.0 = Debug|Win32
+		{D31977E9-BFD7-471C-A10D-DA216B8DE55B}.Release|x64.ActiveCfg = Release|x64
+		{D31977E9-BFD7-471C-A10D-DA216B8DE55B}.Release|x64.Build.0 = Release|x64
+		{D31977E9-BFD7-471C-A10D-DA216B8DE55B}.Release|x86.ActiveCfg = Release|Win32
+		{D31977E9-BFD7-471C-A10D-DA216B8DE55B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
