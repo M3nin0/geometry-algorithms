@@ -8,3 +8,14 @@ bool SegmentsIsEquals(const Point& a, const Point& b, const Point& c, const Poin
 	return (PointIsOverPoint(a, c) && PointIsOverPoint(b, d)) ||
 		(PointIsOverPoint(a, d) && PointIsOverPoint(b, c));
 }
+
+bool SegmentsEdgeIsEquals(const Point& a, const Point& b, const Point& c, const Point& d)
+{
+	// checking that the segments are not overlapping and that there is only one end connected
+	bool affirmativeOne = (PointIsOverPoint(a, c) && !PointIsInSegment(d, a, b) && !PointIsInSegment(b, c, d));
+	bool affirmativeTwo = (PointIsOverPoint(a, d) && !PointIsInSegment(c, a, b) && !PointIsInSegment(b, c, d));
+	bool affirmativeThree = (PointIsOverPoint(b, c) && !PointIsInSegment(d, a, b) && !PointIsInSegment(a, c, d));
+	bool affirmativeFour = (PointIsOverPoint(b, d) && !PointIsInSegment(c, a, b) && !PointIsInSegment(a, c, d));
+
+	return affirmativeOne || affirmativeTwo || affirmativeThree || affirmativeFour; 
+}
