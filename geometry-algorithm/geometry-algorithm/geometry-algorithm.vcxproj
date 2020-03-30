@@ -125,11 +125,13 @@
   <ItemGroup>
     <ClInclude Include="BaseGeometryAlgorithms.h" />
     <ClInclude Include="GeometryType.h" />
+    <ClInclude Include="SegmentAlgorithms.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaseGeometryAlgorithms.cpp" />
     <ClCompile Include="GeometryType.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SegmentAlgorithms.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

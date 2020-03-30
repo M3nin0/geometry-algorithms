@@ -162,11 +162,14 @@
   <ItemGroup>
     <ClCompile Include="..\geometry-algorithm\BaseGeometryAlgorithms.cpp" />
     <ClCompile Include="..\geometry-algorithm\GeometryType.cpp" />
+    <ClCompile Include="..\geometry-algorithm\SegmentAlgorithms.cpp" />
     <ClCompile Include="geometry-algorithms-test.cpp" />
+    <ClCompile Include="segments-algorithms-test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\geometry-algorithm\BaseGeometryAlgorithms.h" />
     <ClInclude Include="..\geometry-algorithm\GeometryType.h" />
+    <ClInclude Include="..\geometry-algorithm\SegmentAlgorithms.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
