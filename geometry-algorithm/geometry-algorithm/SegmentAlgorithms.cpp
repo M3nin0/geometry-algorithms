@@ -19,3 +19,12 @@ bool SegmentsEdgeIsEquals(const Point& a, const Point& b, const Point& c, const 
 
 	return affirmativeOne || affirmativeTwo || affirmativeThree || affirmativeFour; 
 }
+
+bool SegmentsIsOverlap(const Point& a, const Point& b, const Point& c, const Point& d)
+{
+	bool edgeCIsInSegmentAB = RelativePositionPointSegment(c, a, b) == 0;
+	bool edgeDIsInSegmentAB = RelativePositionPointSegment(d, a, b) == 0;
+
+	if (edgeCIsInSegmentAB && edgeDIsInSegmentAB)
+		return PointIsInSegment(c, a, b) || PointIsInSegment(d, a, b) || PointIsInSegment(a, c, d) || PointIsInSegment(b, c, d);
+}

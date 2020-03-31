@@ -37,5 +37,25 @@ namespace geometryalgorithmstest
 
 			Assert::AreEqual(SegmentsEdgeIsEquals(p1, p2, p3, p4), false);
 		}
+
+		TEST_METHOD(TestSegmentsIsOverlapTrue)
+		{
+			Point p1(2, 2);
+			Point p2(6, 6);
+			Point p3(3, 3);
+			Point p4(5, 5);
+
+			Assert::AreEqual(SegmentsIsOverlap(p1, p2, p3, p4), true);
+		}
+
+		TEST_METHOD(TestSegmentsIsOverlapFalse)
+		{
+			Point p1(2, 2);
+			Point p2(6, 6);
+			Point p3(3, 3);
+			Point p4(5, 5);
+
+			Assert::AreEqual(SegmentsIsOverlap(p1, p3, p2, p4), false);
+		}
 	};
 }
