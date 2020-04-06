@@ -16,7 +16,7 @@ namespace geometryalgorithmstest
 			Point p1(2, 2);
 			Point p2(4, 4);
 
-			Assert::AreEqual(SegmentsIsEquals(p1, p2, p2, p1), true);
+			Assert::AreEqual(true, SegmentsIsEquals(p1, p2, p2, p1));
 		}
 
 		TEST_METHOD(TestSegmentsEdgeIsEqualsTrue)
@@ -25,7 +25,7 @@ namespace geometryalgorithmstest
 			Point p2(4, 4);
 			Point p3(5, 2);
 
-			Assert::AreEqual(SegmentsEdgeIsEquals(p1, p2, p3, p2), true);
+			Assert::AreEqual(true, SegmentsEdgeIsEquals(p1, p2, p3, p2));
 		}
 
 		TEST_METHOD(TestSegmentsEdgeIsEqualsFalse)
@@ -35,7 +35,7 @@ namespace geometryalgorithmstest
 			Point p3(5, 2);
 			Point p4(7, 8);
 
-			Assert::AreEqual(SegmentsEdgeIsEquals(p1, p2, p3, p4), false);
+			Assert::AreEqual(false, SegmentsEdgeIsEquals(p1, p2, p3, p4));
 		}
 
 		TEST_METHOD(TestSegmentsIsOverlapTrue)
@@ -45,7 +45,7 @@ namespace geometryalgorithmstest
 			Point p3(3, 3);
 			Point p4(5, 5);
 
-			Assert::AreEqual(SegmentsIsOverlap(p1, p2, p3, p4), true);
+			Assert::AreEqual(true, SegmentsIsOverlap(p1, p2, p3, p4));
 		}
 
 		TEST_METHOD(TestSegmentsIsOverlapFalse)
@@ -55,7 +55,17 @@ namespace geometryalgorithmstest
 			Point p3(3, 3);
 			Point p4(5, 5);
 
-			Assert::AreEqual(SegmentsIsOverlap(p1, p3, p2, p4), false);
+			Assert::AreEqual(false, SegmentsIsOverlap(p1, p3, p2, p4));
+		}
+
+		TEST_METHOD(SegmentsIsAlignedTrue)
+		{
+			Point p1(1, 1);
+			Point p2(3, 3);
+			Point p3(4, 4);
+			Point p4(6, 6);
+
+			Assert::AreEqual(true, SegmentsIsAligned(p1, p2, p3, p4));
 		}
 	};
 }
